@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+:root {
+  /*colors  */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-Gray: hsl(0, 0%, 41%);
+  --limegreen: limegreen;
+  --skyblue: skyblue;
+  --gold: gold;
+  --orangered: orangered;
+  --blue: rgb(27, 27, 206);
+  /* size */
+  --min-fsize: 7.5rem;
+  --ideal-fsize: 8vw;
+  --max-fsize: 1rem;
+
+  /* font styles */
+  --alata-font: "Alata", sans-serif;
+  --josefin-sans-font: "Josefin Sans", sans-serif;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* Utilities */
+.push-left {
+  margin-left: auto;
+}
+.push-right {
+  margin-right: auto;
+}
+
+/* Navigation Styles */
+.primary-navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2em;
+  font-family: var(--alata-font);
+  color: var(--white);
+  font-size: var(--max-fsize);
+}
+.primary-navigation {
+  width: 100%;
+}
+
+.navigation-container {
+  background-image: url("/images/peakpx.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem 7rem 3rem 7rem;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+.navigation-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.navigation-title h1 {
+  font-size: 3rem;
+  font-family: var(--alata-font);
+}
+.navigation-title p {
+  font-family: var(--josefin-sans-font);
+  margin-bottom: 1.5rem;
+}
+/*Data table styles */
+.address-details,
+.grades-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+
+  font-family: var(--alata-font);
+  font-size: var(--max-fsize);
+}
+tr th {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  padding: 2rem;
+}
+tr {
+  border-bottom: 1px solid;
+}
+td {
+  padding: 1rem;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* search bar */
+.inputSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  outline: 0px solid rgb(0, 0, 0, 0);
+  border-radius: 10px;
+  transition: 0.3s;
+  color: var(--white);
+  width: 28%;
+  font-family: var(--josefin-sans-font);
+  padding: 1rem;
+  gap: 1em;
+  margin-bottom: 1.5rem;
+}
+.inputSearch input {
+  background-color: rgb(0, 0, 0, 0);
+  color: rgb(206, 235, 14);
+  outline: 0;
+  border: 0;
+  font-size: 1em;
+  width: 100%;
+}
+
+.inputSearch:focus-within {
+  outline: 2px solid #5549f1;
+}
+
+.inputSearch .filter {
+  outline: 0.2em solid;
+  padding: 1rem;
+  width: 100px;
+  border-radius: 5px;
+  --bg-color: var(--blue);
+  --color: var(--white);
+  --outline-clr: var(--blue);
+  color: var(--white);
+  outline: 2px solid var(--outline-clr);
+  font-family: var(--alata-font);
+  cursor: pointer;
+}
+.search-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+}
+.icon-button {
+  display: flex;
+  gap: 1em;
+}
+
+/* button */
+.button-content {
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
+  gap: 30px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--white);
+
+  font-size: 1em;
+  border-radius: 4px;
+  font-family: var(--alata-font);
+  position: relative;
+}
+
+.brooklyn {
+  --bg-color: var(--white);
+  --color: var(--black);
+  --outline-clr: var(--white);
+  outline: 2px solid var(--outline-clr);
+  color: var(--white);
+}
+
+.queens {
+  --bg-color: var(--limegreen);
+  --color: var(--black);
+  --outline-clr: var(--limegreen);
+  color: var(--white);
+  outline: 2px solid var(--outline-clr);
+}
+
+.manhattan {
+  --bg-color: var(--skyblue);
+  --color: var(--black);
+  --outline-clr: var(--skyblue);
+  color: var(--white);
+  outline: 2px solid var(--outline-clr);
+}
+
+.bronx {
+  --bg-color: var(--gold);
+  --color: var(--black);
+  --outline-clr: var(--gold);
+  color: var(--white);
+  outline: 2px solid var(--outline-clr);
+}
+
+.staten-island {
+  --bg-color: var(--orangered);
+  --color: var(--black);
+  --outline-clr: var(--orangered);
+  color: var(--white);
+  outline: 2px solid var(--outline-clr);
+}
+
+.animation:hover {
+  animation: bg-animation 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bg-animation {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: var(--bg-color);
+    color: var(--color);
+  }
+}
