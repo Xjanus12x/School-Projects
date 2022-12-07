@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css");
+
+:root {
+  /*colors  */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-Gray: hsl(0, 0%, 41%);
+
+  /* size */
+  --min-fsize: 7.5rem;
+  --ideal-fsize: 8vw;
+  --max-fsize: 1rem;
+
+  /* font styles */
+  --alata-font: "Alata", sans-serif;
+  --josefin-sans-font: "Josefin Sans", sans-serif;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.push-left {
+  margin-left: auto;
+}
+
+/* Navigation Styles */
+.primary-navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2em;
+  font-family: var(--alata-font);
+  color: var(--white);
+  font-size: var(--max-fsize);
+  margin-bottom: 12rem;
+}
+.primary-navigation {
+  width: 100%;
+}
+
+.navigation-container {
+  background-image: url("/images/peakpx.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0rem 7rem 10rem 7rem;
+}
+.navigation-title {
+  font-family: var(--alata-font);
+  width: 50%;
+  color: var(--white);
+  font-size: 4rem;
+  text-transform: capitalize;
+  outline: 2px solid var(--white);
+  outline-offset: 0.3rem;
+  border-radius: 1px;
+  background: #1f23b633;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+main {
+  background-color: var(--white);
+  font-family: var(--josefin-sans-font);
+  padding-bottom: 5rem;
+}
+
+.introduction-container {
+  padding: 5rem 10rem 4rem 10rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.introduction-container img {
+  width: 60%;
+  height: 100%;
+  border-radius: 0.5em;
+  box-shadow: -27px 30px 18px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -27px 30px 18px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -27px 30px 18px -8px rgba(0, 0, 0, 0.75);
+}
+
+main div:nth-child(1) div {
+  padding: 3rem;
+  position: absolute;
+  top: 30rem;
+  left: 50rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--white);
+  background-color: var(--dark-gray);
+  border-radius: 0.5em;
+  outline: 3px solid var(--black);
+  outline-offset: 3px;
+}
+
+main div:nth-child(1) > div h2 {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+main div:nth-child(1) > div p {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.btn-more {
+  position: relative;
+  display: inline-block;
+  min-width: 180px;
+  padding: 15px 10px;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 0.9rem;
+  letter-spacing: 0.7px;
+  border: 1px solid var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: var(--josefin-sans-font);
+  font-weight: 900;
+  background-color: transparent;
+}
+.btn-more:hover {
+  padding-right: 30px;
+}
+
+.btn-more i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-10px, -50%);
+  display: inline-block;
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.3s;
+  color: var(--white);
+}
+.btn-more:hover i {
+  transform: translate(5px, -50%);
+  opacity: 1;
+}
+
+.location-title-container {
+  background-image: url("/images/peakpx.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: var(--black);
+  padding: 4rem 10rem 4rem 10rem;
+}
+
+.location-title-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location-title-container h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+.branches {
+  padding: 0px 10rem 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 40rem);
+  gap: 2rem;
+}
+.branches div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  text-align: center;
+}
+.branches div h4 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  transform: translateY(11rem);
+  backdrop-filter: blur(0);
+  transition: transform 0.5s ease-in-out;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.branches div:hover h4 {
+  transform: rotateY(0);
+  backdrop-filter: blur(8px);
+  /* padding: 1rem 2rem 1rem 2rem; */
+}
+
+.branches div:nth-child(1) {
+  background-image: url("/images/location1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.branches div:nth-child(2) {
+  background-image: url("/images/location2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.branches div:nth-child(3) {
+  background-image: url("/images/location3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.branches div:nth-child(4) {
+  background-image: url("/images/location4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.branches div:nth-child(5) {
+  background-image: url("/images/location5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.branches div:nth-child(6) {
+  background-image: url("/images/location6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.branches div:nth-child(7) {
+  background-image: url("/images/location7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.branches div:nth-child(8) {
+  background-image: url("/images/location8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  background-color: var(--black);
+  padding: 0px 10rem 5rem 10rem;
+  font-family: var(--josefin-sans-font);
+}
+
+footer div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div:nth-child(1) ul {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--white);
+}
+footer div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+}
+
+footer div:nth-child(2) ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: -2rem;
+}
+
+footer div:nth-child(2) p {
+  color: var(--dark-gray);
+  margin-top: -2rem;
+  font-size: 0.9rem;
+}
