@@ -1,0 +1,95 @@
+body {
+  background-image: url("loginBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  padding: 7rem 5rem 1rem 5rem;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+main {
+  display: flex;
+  justify-content: flex-end;
+}
+.logo-container {
+  outline: 1px solid black;
+  border-radius: 100px 100px 0 0;
+  width: 10rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.primary-container {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.shop-title {
+  height: 30%;
+  width: 90%;
+  justify-content: center;
+  gap: 4rem;
+}
+
+h1 {
+  font-size: 4em;
+  width: min-content;
+  letter-spacing: 0.1em;
+}
+p {
+  text-align: center;
+  letter-spacing: 0.6em;
+  margin-top: 4.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  
+}
+.buttons input:nth-child(1),
+.buttons input:nth-child(2) {
+  width: 40%;
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding-left: 2.5em;
+  
+}
+.buttons input:nth-child(3) {
+  width: 15%;
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+
+.buttons input:nth-child(3):hover {
+  color: brown;
+  opacity: 0.5;
+}
+.buttons input:nth-child(3):active {
+  color: brown;
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+footer img {
+  margin-top: 3.5rem;
+  height: 40px;
+  width: 43px;
+}

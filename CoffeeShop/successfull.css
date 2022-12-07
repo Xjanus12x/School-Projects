@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+body {
+  background-image: url("homeBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 6rem 10rem 1rem 5rem;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  list-style: none;
+  width: 100%;
+  gap: 1.5rem;
+  font-size: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
+  flex-direction: column;
+}
+h1 {
+  font-family: "Noto Serif", serif;
+  color: white;
+  width: 45%;
+  font-size: 7em;
+  text-align: end;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.buttons input {
+  padding: 1em;
+  background-color: transparent;
+  border: 1px solid yellowgreen;
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+}
+.buttons input:hover {
+  color: white;
+  opacity: 0.5;
+}
+.buttons input:active {
+  color: brown;
+  opacity: 1;
+}
+
