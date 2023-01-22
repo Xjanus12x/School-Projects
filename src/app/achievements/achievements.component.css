@@ -1,3 +1,0 @@
-ul > :not(li:first-child) p:first-child{
- font-weight: bolder;
-}
