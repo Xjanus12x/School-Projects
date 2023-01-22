@@ -1,0 +1,7 @@
+.wrapper {
+    background-color: white;
+    width: 45%;
+    display: grid;
+    place-items: center;
+    padding-top: 2rem;
+}
